@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+    <meta charset="UTF-8">
+    <title>My Blog -Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+    <!-- Custom styles for this template -->
+    <link href="css/carousel.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+</head>
+<body ng-app="myBlog">
+<div class="container" id="main">
+    <ng-include src="'templates/header.html'"></ng-include>
+
+    
+    <ng-view></ng-view>
+  </div><!--End Container--> 
+    
+ <ng-include src="'templates/footer.html'"></ng-include>
+
+<script src="http://code.jquery.com/jquery.js"></script>
+<script src="jquery/dist/jquery.min.js"></script>
+<script src="bootstrap/dist/js/bootstrap.min.js"></script>
+   <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+
+<script type="text/javascript" src="lib/angular/angular.min.js"></script>
+<script type="text/javascript" src="lib/angular-route/angular-route.min.js"></script>
+<!--Application js -->
+<script type="text/javascript" src="app.module.js"></script>
+<script type="text/javascript" src="js/controllers/home.controller.js"></script>
+<script type="text/javascript" src="js/controllers/quiz.controller.js"></script>
+<script type="text/javascript" src="js/controllers/result.controller.js"></script>
+<script type="text/javascript" src="js/controllers/main.controller.js"></script>
+
+<script type="text/javascript" src="js/factories/quiz.service.js"></script>
+<script type="text/javascript" src="js/factories/data.service.js"></script>
+
+
+<script type="text/javascript" src="js/filters/uppercaseFilter.js"></script>
+<script type="text/javascript" src="js/directives/sidebar.directive.js"></script>
+</body>
+</html>

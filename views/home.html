@@ -1,0 +1,33 @@
+<ng-include src="'templates/Carousel.html'"></ng-include>
+
+<div class="row" id="bigCallout" ng-controller="MainController as main">
+    <div class="col-sm-12 ">
+        <div class="well">
+            <div class="page-header">
+                <h1>{{main.title | makeUppercase }}  <small>A forntend technolgy Solutions </small></h1>
+            </div><!--End Page Header -->
+            <p class="lead">Some leading technologies will help you to make you better frontend developer i.e HTML5 ,CSS3, JavaScript,Angular Js,JQuery,Bootstrap ,Node JS</p>
+            <p>Workplace culture doesn’t start with beanbags, foosball tables, or a beer fridge, and it doesn’t end with neckties, PCs, or big corporations. It’s the unwritten rules, behavior, beliefs, and the motivations that enable good work to get done, or it’s what stifles a workforce. For design to be most effective and for designers to feel valued, we need to work in a culture that embraces design and allows it to succeed.</p>
+            <a href="#/Quiz/App" class="btn btn-primary">Let Start </a>
+        </div>
+
+    </div>
+
+</div><!--End row -->
+<div class="row" ng-controller="MainController as main">
+    <div class="col-sm-12 ">
+    <div class="well well-sm">
+        <form class="form-inline well well-sm clearfix">
+            <span class="glyphicon glyphicon-search"></span>
+            <input
+                    type="text"
+                    placeholder="Search..."
+                    class="form-control"
+                    ng-model="main.name">
+
+
+        </form>
+        {{main.message}}
+    </div>
+</div>
+</div>

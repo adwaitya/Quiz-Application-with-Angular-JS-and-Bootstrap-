@@ -1,0 +1,7 @@
+
+
+    <ul class="listgroup">
+        <li ng-repeat="item in home.sidebarItems" class="list-item" ng-class="{'selected': $root.selectedBrandId == item.Id}">
+            <a href="javascript:void(0);" ng-click="sidebar.selectBrand(item)">{{item.Name}}</a>
+        </li>
+    </ul>
